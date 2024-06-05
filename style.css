@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    /* Custom */
+    --color-blue: #16274C;
+    --color-red: #DC1B32;
+    --color-white: #FFFFFF;
+    --color-light-gray: #E8E8E8;
+    --color-dark-gray: #404040
+}
+
+
+/* Text Color */
+.color__light{
+    color: var(--color-white)
+}
+.color__blue{
+    color: var(--color-blue)
+}
+.color__light__gray{
+    color: var(--color-light-gray)
+}
+.color__gray{
+    color: var(--color-dark-gray)
+}
+.color__red{
+    color: var(--color-red)
+}
+
+
+
+/* Background Color */
+.bg__light{
+    background-color: var(--color-white)
+}
+.bg__blue{
+    background-color: var(--color-blue)
+}
+.bg__light__gray{
+    background-color: var(--color-light-gray)
+}
+.bg__gray{
+    background-color: var(--color-dark-gray)
+}
+.bg__red{
+    background-color: var(--color-red)
+}
+
+
+
+
+
+.header__top{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.header__icon{
+    color: var(--color-white);
+}
+
+.header__btn{
+    background-color: var(--color-red);
+    font-size: 16px;
+    width: 213px;
+    height: 47px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+}
+
+
+/* Hero SEction */
+.hero__section{
+    /* height: 537px; */
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__section_hero_text{
+    font-size: 34px;
+}
+
+.hero__section_text{
+    font-size: 17px;
+}
+
+.hero__section__action{
+    background-color: var(--color-red);
+    font-size: 16px;
+    width: 225px;
+    height: 62px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+}
+
+
+
+/* Welcome Section */
+.welcome__section{
+    /* height: 40dvh; */
+    padding: 30px;
+    /* background-color: red; */
+}
+
+.welcome__heading h5{
+    font-size: 32px;
+}
+.welcome__heading p{
+    font-size: 20px;
+}
+
+.welcome__text{
+    font-size: 17px;
+}
+
+.welcome__readmore{
+    margin-top: 50px;
+}
+.welcome__readmore a{
+    color: var(--color-red);
+    text-decoration: none;
+    display: block
+}
+
+
+
+
+/* Our Service  */
+.service__wrapper{
+    margin-top: 30px;
+    /* height: 100dvh */
+}
+
+.service__heading{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+
+.service__cards__wrapper{
+    margin-top: 200px;
+}
+
+/* .service__card{
+    overflow: hidden;
+} */
+
+.service__card__image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__card__image img{
+    width: 100%;
+    height: auto;
+}
+
+.service__text p{
+    font-size: 24px;
+    color: var(--color-blue);
+}
+
+
+
+
+
+/* Video Section */
+.video__section__wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.video__action__btn{
+    background-color: var(--color-red);
+    font-size: 16px;
+    width: 213px;
+    height: 62px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    margin: auto;
+}
+
+.video__title{
+    font-size: 3rem;
+    color: var(--color-blue);
+}
+
+.video__section{
+    position: relative;
+    height:80dvh;
+}
+
+.video__wrapper{
+    width: 100;
+    margin-top: 80px;
+    position: absolute;
+    bottom: -rem;
+    left: 0;
+    right: 0
+}
+
+.video__wrapper img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Pills */
+.bg__text__gray{
+    background-color: var(--color-light-gray);
+}
