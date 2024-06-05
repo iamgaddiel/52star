@@ -50,7 +50,12 @@
 
 
 
-
+.top__desktop{
+    display: none;
+}
+.top__mobile{
+    display: none !important;
+}
 
 .header__top{
     background-color: var(--color-blue);
@@ -70,6 +75,17 @@
     border: none;
     border-radius: 12px;
 }
+
+
+@media (max-width: 480px) {
+    .top__desktop{
+        display: none;
+    }
+    .top__mobile{
+        display: block;
+    }
+  }
+
 
 
 /* Hero SEction */
