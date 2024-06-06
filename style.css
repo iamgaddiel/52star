@@ -111,7 +111,7 @@
   height: 100dvh;
   display: flex;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 200px;
   background: linear-gradient(to right, #ebebeb, transparent 40%);
   /* background: linear-gradient(to right, blue 10%, transparent); */
 }
