@@ -202,7 +202,6 @@
 
 /* Video Section */
 .video__section__wrapper {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -219,7 +218,7 @@
 }
 
 .video__title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--color-blue);
 }
 
