@@ -7,6 +7,7 @@
   --color-blue: #16274c;
   --color-red: #dc1b32;
   --color-white: #ffffff;
+  --color-white-transparent: #ffffff9d;
   --color-light-gray: #e8e8e8;
   --color-dark-gray: #404040;
 }
@@ -35,6 +36,9 @@
 /* Background Color */
 .bg__light {
   background-color: var(--color-white);
+}
+.bg__light__transparent {
+  background-color: var(--color-white-transparent);
 }
 .bg__blue {
   background-color: var(--color-blue);
@@ -72,13 +76,17 @@
 }
 
 .nav__icon{
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin: auto 3px;
 }
 .nav__icon img{
   width: 100%;
   height: auto
+}
+
+.header__top__text{
+  font-size: .850rem;
 }
 
 #top__mobile{
@@ -88,7 +96,8 @@
   display: block;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) { */
+@media (max-width: 770px) {
   #top__desktop {
     display: none;
   }
@@ -146,9 +155,11 @@
   margin-top: 50px;
 }
 .welcome__readmore a {
-  color: var(--color-red);
+  color: var(--color-red) !important;
   text-decoration: none;
-  display: block;
+}
+.welcome__readmore a span {
+  color: var(--color-red) !important;
 }
 
 /* Our Service  */
