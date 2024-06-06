@@ -10,6 +10,10 @@
   --color-light-gray: #e8e8e8;
   --color-dark-gray: #404040;
 }
+/* 
+.active{
+  background-color: var(--color-dark-gray) !important;
+} */
 
 /* Text Color */
 .color__light {
@@ -98,7 +102,7 @@
   height: 100dvh;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #ebebeb 20%, transparent);
+  background: linear-gradient(to right, #ebebeb, transparent 40%);
   /* background: linear-gradient(to right, blue 10%, transparent); */
 }
 
@@ -316,6 +320,11 @@
   border-radius: 12px;
   margin: auto;
 }
+
+
+
+
+
 
 /* Estimate */
 .estimate__form__wrapper {
