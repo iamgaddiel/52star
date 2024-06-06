@@ -36,24 +36,79 @@
 <body>
     <header class="fixed-top">
         <!-- start: top header -->
-        <section class="header__top p-2">
-            <!-- <div class=" container d-flex align-items-center justify-content-between top__desktop">
-                <div>
-                    <span>+7 707 744 05 04</span>
-                    <span class="ms-2">FOR FREE ON-SITE EVALUATION FOR YOUR PROJECT</span>
-                    <span class="ms-5">CONTRACTOR STATE LICENSE #1042404</span>
+        
+        
+        <!-- desktop view -->
+        <section class="header__top" id="top__desktop">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <div>
+                        <span class="color__light">
+                            <ion-icon name="call"></ion-icon>
+                            +7 707 744 05 04</span>
+                        <span class="ms-2 color__light fw-lighter">FOR FREE ON-SITE EVALUATION FOR YOUR PROJECT</span>
+                        <span class="ms-5 color__light fw-lighter">CONTRACTOR STATE LICENSE #1042404</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/1.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/2.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/3.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/4.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/5.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/6.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/7.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/8.svg" />
+                            </a>
+                        </div>
+                        <div class="nav__icon">
+                            <a href="">
+                                <img src="./assets/images/9.svg" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex">
-                    <ion-icon name="call" class="color__light" />
-                    <ion-icon name="call" class="color__light" />
-                </div>
-            </div> -->
-            <div class="container d-flex align-items-center justify-content-between top__mobile">
-                <div>
-                    <span>+7 707 744 05 04</span>
-                </div>
-                <div class="d-flex border border-light rounded-3 p-1">
-                    FREE ESTIMATE
+            </div>
+        </section>
+
+
+        <!-- mobile view -->
+        <section class="header__top" id="top__mobile">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <span class="color__light">+7 707 744 05 04</span>
+                    <div class="d-flex border border-light rounded-4 p-2 fw-bold" >
+                        <span class="color__light" style="font-size: 13px;">FREE ESTIMATE</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -361,7 +416,7 @@
     <section class="bg__text__gray">
         <div class="container">
             <nav class="nav nav-pills flex-column flex-sm-row py-5">
-                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">All</a>
+                <a class="flex-sm-fill text-sm-center nav-link bg__light__gray active" aria-current="page" href="#">All</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="#">KiTCHEN REMODELING </a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="#">Bathroom REMODELING </a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="#">Outdoor REMODELING </a>
@@ -480,7 +535,7 @@
 
 
     <!-- start: Estimate -->
-    <div class="" style="position: relative; height: 80dvh;">
+    <div class="" style="position: relative; height: 90dvh;">
         <div class="container">
             <div class="estimate__form__wrapper">
                 <div class="estimate-form">
@@ -516,7 +571,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- end: Estimate -->
 
@@ -524,7 +578,7 @@
 
     <!-- start: about -->
     <section class="bg__light__gray">
-        <div class="container about__inner__wrapper" >
+        <div class="container about__inner__wrapper">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-sm-12 text-center">
                     <div class="profile__image__wrapper">
@@ -537,21 +591,22 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12 mt-4">
-                    <div class="profile__image__wrapper">
+                    <div class="">
                         <p>General Contractor in Agoura Hills</p>
                         <img src="./assets/images/t5d2 1.svg" alt="logo" />
                     </div>
 
-                    <p class="mt-5">52 Star Construction is LA based construction company with years of experience and skills as a
+                    <p class="mt-5">52 Star Construction is LA based construction company with years of experience and
+                        skills as a
                         homebuilders allow us to the ability to provide & develop the home remodeling project throughout
                         the process, the initial idea all the way to the design, permitting, construction, renovation,
                         new addition and completion of the project successfully. In conclusion, we also taking care of
                         water damage and restoration. </p>
 
 
-                    <div class="color__red d-felx align-items-center">
-                        <span style="font-weight: 500;">CHECK OUR LICENSE – CLICK HERE </span>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <div class="d-flex align-items-center">
+                        <span class="color__red" style="font-weight: 500;">CHECK OUR LICENSE – CLICK HERE </span>
+                        <ion-icon name="arrow-forward-outline" class="color__red ms-2"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -560,6 +615,165 @@
     <!-- end: about -->
 
 
+
+    <!-- start: testimonial -->
+    <section class="p-5">
+        <div class="container">
+            <div class="w-50 mx-auto text-center">
+                <div class="service__heading__img">
+                    <img src="./assets/images/starts.svg" alt="">
+                </div>
+                <h2 class="mt-5">OUR CUSTOMERS LOVE US</h2>
+
+                <hr class="color__red mt-5">
+
+                <p>CLIENT TESTIMONIALS. HERE IS SOME REVIEWS FROM OUR WONDERFUL CUSTOMERS</p>
+            </div>
+
+
+            <!-- Testimonial Items -->
+            <div class="testimonial__item__wrapper">
+                <div class="owl-carousel" id="carousel__wrapper__testimonial">
+                    <div class="testimonial__item">
+                        <div class="quote__wrapper">
+                            <img src="./assets/images/quote.svg" />
+                        </div>
+
+                        <p class="mt-5">
+                            "Mike Azuly is amazing.He is prompt and communicates.He is a true Craftsman and does
+                            fantastic
+                            work. He is doing my Kitchen remodel as well as other projects. He came highly recommended
+                            to
+                            us. We are so lucky that we found Mike. We are truly in the best hands! "
+                        </p>
+
+                        <div class="d-flex testimonial__star__rating">
+                            <img src="./assets/images/rating_star.svg" alt="rating stars" />
+                            <img src="./assets/images/rating_star.svg" alt="rating stars" />
+                            <img src="./assets/images/rating_star.svg" alt="rating stars" />
+                            <img src="./assets/images/rating_star.svg" alt="rating stars" />
+                            <img src="./assets/images/rating_star.svg" alt="rating stars" />
+                        </div>
+
+                        <div class="d-flex testimonial__profile align-items-center mt-5">
+                            <div class="testimonial__image__wrapper">
+                                <img src="./assets/images/person-icon.svg" />
+                            </div>
+                            <strong class="fw-bold ms-4" style="font-size: 22px;">
+                                Elana H.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: testimonial -->
+
+
+
+    <!-- start: contact section -->
+    <section class="bg__light__gray p-5">
+        <div class="container ">
+
+            <div class="service__heading">
+                <div class="service__heading__img">
+                    <img src="./assets/images/starts.svg" alt="">
+                </div>
+                <h2 class="mt-5">Let’s Get In Touch</h2>
+
+                <hr class="color__red mt-5">
+            </div>
+
+
+
+            <!-- Contact Area -->
+            <div class="row justify-content-between" style="margin-top: 70px;">
+
+                <!-- LHS -->
+                <div class="col-lg-6 col-sm-12">
+                    <form class="contact__form">
+                        <span>We will get back to you as soon as possible.</span>
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group mb-4">
+                                    <input type="text" class="" id="fullname" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group mb-4">
+                                    <input type="text" class="" id="company_name" placeholder="Company Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class="" id=" email" placeholder="Work Email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="" id="" placeholder="Subject">
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea class="" id=" message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Send</button>
+                    </form>
+                </div>
+
+
+                <!-- RHS -->
+                <div class="col-lg-5 col-sm-12 mt-4">
+                    <div class="contact__detail">
+                        <div class="contact__detail__item d-flex">
+                            <ion-icon name="call"></ion-icon>
+                            <div class="ms-3">
+                                <span>Call us</span>
+                                <p class="fw-bold">1-800-303-5859</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail__item d-flex">
+                            <ion-icon name="mail"></ion-icon>
+                            <div class="ms-3">
+                                <span>Email Address</span>
+                                <p class="fw-bold">52starconstruction@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail__item d-flex">
+                            <ion-icon name="location"></ion-icon>
+                            <div class="ms-3">
+                                <span>Call us</span>
+                                <p class="fw-bold">1-800-303-5859</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map__wrapper">
+                        <img src="./assets/images/Map.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stop: contact section -->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="service__heading">
+                <div class="service__heading__img">
+                    <img src="./assets/images/starts.svg" alt="">
+                </div>
+                <h3 class="mt-5 color__light">Service areas</h3>
+
+                <hr class="color__light mt-5">
+            </div>
+
+            <div class="service__heading" style="margin-top: 100px;">
+                <p class="color__light">View All</p>
+                <ion-icon name="chevron-down-outline" class="color__light"></ion-icon>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 <!-- jquery -->
@@ -567,7 +781,7 @@
 <script src="./assets/vendors/owl-carousel/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $("#carousel__wrapper__mobile").owlCarousel({
             loop: true,
             margin: 10,
             dots: true,
@@ -587,6 +801,14 @@
                     loop: false
                 }
             }
+        });
+        $("#carousel__wrapper__testimonial").owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            responsiveClass: true,
+            items: 1,
+            autoPlay: true
         });
     });
 </script>

@@ -45,16 +45,12 @@
   background-color: var(--color-red);
 }
 
-.top__desktop {
-  display: none;
-}
-.top__mobile {
-  display: none !important;
-}
+
+
 
 .header__top {
   background-color: var(--color-blue);
-  color: var(--color-white);
+  height: 52px;
 }
 
 .header__icon {
@@ -71,11 +67,28 @@
   border-radius: 12px;
 }
 
+.nav__icon{
+  width: 24px;
+  height: 24px;
+  margin: auto 3px;
+}
+.nav__icon img{
+  width: 100%;
+  height: auto
+}
+
+#top__mobile{
+  display: none;
+}
+#top__desktop {
+  display: block;
+}
+
 @media (max-width: 480px) {
-  .top__desktop {
+  #top__desktop {
     display: none;
   }
-  .top__mobile {
+  #top__mobile {
     display: block;
   }
 }
@@ -250,21 +263,11 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Sponsorship */
-.sponsor__section{
+.sponsor__section {
   padding: 4rem;
 }
-.sponsor__list{
+.sponsor__list {
   margin-top: 100px;
 }
 .sponsor__logo {
@@ -276,34 +279,30 @@
   height: auto;
 }
 
-
-
-
 /* Discount */
-.discount__inner{
+.discount__inner {
   padding-top: 4rem;
 }
 
-
-.discount__inner .wrapper{
+.discount__inner .wrapper {
   /* width: 423px;
   height: 569px; */
 }
 
-.discount__inner .wrapper img{
+.discount__inner .wrapper img {
   width: 100%;
   height: auto;
 }
 
-.discount__inner h4{
+.discount__inner h4 {
   color: var(--color-blue);
   font-size: 32px;
 }
-.discount__inner p{
+.discount__inner p {
   font-size: 54px;
   color: var(--color-red);
 }
-.discount__inner span{
+.discount__inner span {
   font-size: 20px;
   color: var(--color-blue);
 }
@@ -318,19 +317,8 @@
   margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Estimate */
-.estimate__form__wrapper{
+.estimate__form__wrapper {
   position: absolute;
   top: -90px;
   left: 0;
@@ -338,15 +326,11 @@
   margin: auto;
   max-width: 818px;
   height: 758px;
-  background-color: #EBEBEB;
-  /* height: fit-content; */
-  box-shadow: 10px 10px 10px 10px 1px #404040;
+  background-color: #ebebeb;
   border-radius: 10px;
   box-shadow: 1px 100px 100px #c2c2c2;
-  /* box-shadow: var(--color-light-gray) 50px 100px -20px, var(--color-light-gray) 0px 30px 60px -30px; */
-  /* box-shadow: var(--color-light-gray)  0px 10px 50px; */
+  height: max-content;
 }
-
 
 .estimate-form {
   padding: 5rem;
@@ -356,14 +340,14 @@
   font-weight: bold;
 }
 
-.estimate-form input, textarea {
+.estimate-form input,
+textarea {
   background-color: var(--color-white);
   padding: 10px;
   width: 100% !important;
   border: none;
   border-radius: 8px;
 }
-
 
 .estimate-form .btn {
   background-color: var(--color-red);
@@ -376,6 +360,19 @@
   color: #fff;
 }
 
+@media (max-width: 480px) {
+  .estimate__form__wrapper {
+    margin: auto;
+    /* border-radius: 10px; */
+    /* box-shadow: 1px 100px 100px #c2c2c2; */
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -383,14 +380,122 @@
 
 
 /* About */
-.about__inner__wrapper{
+.about__inner__wrapper {
   padding: 7rem 4rem 4rem 4rem;
 }
 
-.about__name{
+.about__name {
   color: var(--color-blue);
   font-size: 32px;
 }
-.about__role{
+.about__role {
   font-size: 22px;
+}
+.profile__image__wrapper img{
+  filter: grayscale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonials */
+.quote__wrapper {
+  width: 40px;
+}
+
+.testimonial__item__wrapper {
+  max-width: 629px;
+  margin: auto;
+  margin-top: 90px;
+}
+
+.testimonial__star__rating {
+  width: 50px;
+}
+
+.testimonial__image__wrapper {
+  background-color: var(--color-light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  padding: 15px;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Contact  */
+.contact__form {
+  /* max-width: 818px; */
+  /* height: 758px; */
+  width: 100%;
+}
+
+.contact__form h2 {
+  font-weight: bold;
+}
+
+.contact__form input,
+textarea {
+  background-color: var(--color-white);
+  padding: 10px;
+  width: 100% !important;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact__form .btn {
+  background-color: var(--color-red);
+  width: 100%;
+  color: #fff;
+  height: 56px;
+}
+.contact__form .btn:hover {
+  background-color: #c9302c;
+  color: #fff;
+}
+
+
+.contact__detail__item ion-icon, span, p{
+  color: var(--color-blue);
+}
+.contact__detail__item ion-icon{
+  font-size: 20px;
+}
+.contact__detail__item span, p{
+  font-size: 14px;
+}
+
+.map__wrapper{
+  width: 100%;
+
+}
+
+.map__wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+footer{
+  padding: 4rem;
+  background: linear-gradient(to bottom, #16274C, #010817);
 }
