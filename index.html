@@ -19,6 +19,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/vendors/owl-carousel/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
+
     <style>
         .navbar-nav {
             flex: 1;
@@ -28,7 +34,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <!-- start: top header -->
         <section class="header__top p-2">
             <!-- <div class=" container d-flex align-items-center justify-content-between top__desktop">
@@ -54,11 +60,11 @@
         <!-- end: top header -->
 
         <!-- start: bottom header -->
-        <section class="bg__light container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <section class="bg__light">
+            <nav class="navbar navbar-expand-lg navbar-light container">
                 <div class="container-fluid">
                     <!-- Logo -->
-                    <img src="./assets/images/cropped-Logo_52star_new-2048x614 1.png" alt="">
+                    <img src="./assets/images/app_logo.svg" alt="">
                     <!-- Toggle button for mobile view -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +101,7 @@
     </header>
 
     <!-- start: hero section -->
-    <section class="hero__section bg__light__gray">
+    <section class="hero__section">
         <div class="container hero__section__content">
 
             <!-- LHS -->
@@ -351,22 +357,239 @@
 
     </section>
 
-    <!-- start: pills -->
-    <div class="bg__text__gray">
+    <!-- start: pills & Image Carousel -->
+    <section class="bg__text__gray">
         <div class="container">
             <nav class="nav nav-pills flex-column flex-sm-row py-5">
                 <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">All</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="#">KiTCHEN REMODELING </a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="#">Bathroom REMODELING  </a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="#">Outdoor REMODELING   </a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Bathroom REMODELING </a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Outdoor REMODELING </a>
                 <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
             </nav>
             <!-- end pills -->
         </div>
+
+
+        <!-- start: carousel -->
+        <!-- desktop view carousel -->
+        <div class="carousel__wrapper" id="carousel__wrapper__desktop">
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-1.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-2.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-3.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-4.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-5.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-6.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-7.jpg" alt="">
+            </div>
+            <div class="carousel__image__wrapper">
+                <img src="./assets/images/crsl-8.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- mobile view carousel -->
+        <div class="owl-carousel" id="carousel__wrapper__mobile">
+            <img src="./assets/images/crsl-1.jpg" alt="">
+            <img src="./assets/images/crsl-2.jpg" alt="">
+            <img src="./assets/images/crsl-3.jpg" alt="">
+            <img src="./assets/images/crsl-4.jpg" alt="">
+            <img src="./assets/images/crsl-5.jpg" alt="">
+            <img src="./assets/images/crsl-6.jpg" alt="">
+            <img src="./assets/images/crsl-7.jpg" alt="">
+            <img src="./assets/images/crsl-8.jpg" alt="">
+        </div>
+        <!-- end: carousel -->
+    </section>
+
+
+    <!-- start: sponsorship -->
+    <section class="sponsor__section">
+        <div class="container">
+            <div class="service__heading">
+                <div class="service__heading__img">
+                    <img src="./assets/images/starts.svg" alt="">
+                </div>
+                <h2 class="mt-5">Proud to be present at</h2>
+
+                <hr class="color__red mt-5">
+            </div>
+
+
+            <div class="sponsor__list w-50 mx-auto ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="sponsor__logo">
+                            <img src="./assets/images/Yelp_Logo.svg" </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sponsor__logo">
+                            <img src="./assets/images/houzz.svg" </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sponsor__logo">
+                            <img src="./assets/images/thumber.svg" </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- end: sponsorship -->
+
+
+
+    <!-- start: discount -->
+    <section class="bg__light__gray w-100">
+        <div class="container">
+            <div class="row justify-content-center align-items-center discount__inner">
+                <div class="col-4">
+                    <div class="wrapper">
+                        <img src="./assets/images/man.svg" alt="Construction Man" />
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <h4 class="color__blue">CALL NOW AND GET UP TO</h4>
+                    <div>
+                        <p class="h1 color__red fw-thin">20% DISCOUNT!</p>
+                        <span>* OF COMPLETE REMODELING OR NEW CONSTRUCTION SERVICES</span>
+                    </div>
+
+                    <button class="discount__action__btn mt-5">
+                        GET THIS AMAZING DEAL
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end: discount -->
+
+
+    <!-- start: Estimate -->
+    <div class="" style="position: relative; height: 80dvh;">
+        <div class="container">
+            <div class="estimate__form__wrapper">
+                <div class="estimate-form">
+                    <h2 class="mb-4">FREE ESTIMATE</h2>
+                    <p class="mb-4">SCHEDULE FREE ON SITE EVALUATION FOR YOUR PROJECT TODAY</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group mb-4">
+                                    <input type="text" class=" id=" firstName" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-group mb-4">
+                                    <input type="text" class=" id=" lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class=" id=" phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class=" id=" email" placeholder="Email">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class=" id=" projectType" placeholder="NEW CONSTRUCTION">
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea class=" id=" message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <!-- end: Estimate -->
+
+
+
+    <!-- start: about -->
+    <section class="bg__light__gray">
+        <div class="container about__inner__wrapper" >
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <div class="profile__image__wrapper">
+                        <img src="./assets/images/man-2.png" />
+                    </div>
+
+                    <div class="mt-3">
+                        <p class="about__name">MIKE AZOULAY</p>
+                        <span class="about__role">THE BUSINESS OWNER</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-4">
+                    <div class="profile__image__wrapper">
+                        <p>General Contractor in Agoura Hills</p>
+                        <img src="./assets/images/t5d2 1.svg" alt="logo" />
+                    </div>
+
+                    <p class="mt-5">52 Star Construction is LA based construction company with years of experience and skills as a
+                        homebuilders allow us to the ability to provide & develop the home remodeling project throughout
+                        the process, the initial idea all the way to the design, permitting, construction, renovation,
+                        new addition and completion of the project successfully. In conclusion, we also taking care of
+                        water damage and restoration. </p>
+
+
+                    <div class="color__red d-felx align-items-center">
+                        <span style="font-weight: 500;">CHECK OUR LICENSE – CLICK HERE </span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: about -->
 
 
 </body>
+
+<!-- jquery -->
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<script src="./assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+    });
+</script>
 
 <!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -376,6 +599,8 @@
 <!-- Ionicons -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 
 
 </html>
